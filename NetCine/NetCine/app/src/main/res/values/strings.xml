@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NetCine</string>
+    <string name="error_title">No se puede conectar al catálogo</string>
+    <string name="error_body">Revisá que el Fire Stick esté conectado al WiFi de tu proveedor de internet.</string>
+    <string name="retry">Reintentar</string>
+    <string name="press_back_again">Presioná Atrás otra vez para salir</string>
+    <string name="opening">Abriendo video…</string>
+    <string name="cant_open">No se pudo abrir este video.</string>
+    <string name="cant_play">No se pudo reproducir este video. Probá de nuevo en un rato.</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        app:show_buffering="always"
+        app:show_shuffle_button="false"
+        app:show_subtitle_button="false"
+        app:show_timeout="4000"
+        app:use_controller="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/title_gradient"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="48dp"
+        android:paddingTop="28dp"
+        android:paddingRight="48dp"
+        android:paddingBottom="40dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/resolving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:indeterminateTint="#FFCD6A33" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/opening"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</FrameLayout>
